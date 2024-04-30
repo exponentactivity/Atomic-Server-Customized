@@ -23,6 +23,12 @@ modules:
       # - micro
       # - starship
     remove:
+      - cockpit-bridge # Unneeded package from ucore-minimal
+      - cockpit-system # Unneeded package from ucore-minimal
+      - cockpit-selinux # Unneeded package from ucore-minimal
+      - cockpit-networkmanager # Unneeded package from ucore-minimal
+      - cockpit-podman # Unneeded package from ucore-minimal
+      - moby-engine # Unneeded package from ucore-minimal
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       # - firefox
