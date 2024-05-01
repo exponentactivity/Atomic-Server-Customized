@@ -36,12 +36,12 @@ modules:
 
   - type: chezmoi
     source: ghcr.io/exponentactivity/modules:latest
-    install: true # (Default - Expects type: boolean) Installs chezmoi to /usr/bin/chezmoi from latest Github release
+    # install: true # (Default - Expects type: boolean) Installs chezmoi to /usr/bin/chezmoi from latest Github release
     repository: "https://gitlab.com/unshippedreminder/dotfiles-server.git" # (Expects type: string) Git repository to initialize
-    enable_all_users: true # (Default - Expects type: boolean) Enable the modules services globally for all users
-    run_every: '1d' # (Default - Expects type: string) Dotfiles will be updated with this interval
-    wait_after_boot: '5m' # (Default - Expects type: string) Dotfile updates will wait this long after a boot before running
-    disable_init: false # (Default - Expects type: boolean) Disable the service that initializes `repository` on users that are logged in or has linger enabled
-    disable_update: false # (Default - Expects type: boolean) Disable the timer that updates chezmoi with the interval set above
+    # enable_all_users: true # (Default - Expects type: boolean) Enable the modules services globally for all users
+    # run_every: '1d' # (Default - Expects type: string) Dotfiles will be updated with this interval
+    # wait_after_boot: '5m' # (Default - Expects type: string) Dotfile updates will wait this long after a boot before running
+    # disable_init: false # (Default - Expects type: boolean) Disable the service that initializes `repository` on users that are logged in or has linger enabled
+    # disable_update: false # (Default - Expects type: boolean) Disable the timer that updates chezmoi with the interval set above
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
