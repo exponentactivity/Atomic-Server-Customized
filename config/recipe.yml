@@ -16,6 +16,9 @@ modules:
           # copies config/files/usr into your image's /usr.
           # put configuration files you want in /etc/ on a booted system 
           # in /usr/etc/ in the image. read more in files module reference.
+  - type: rpm-ostree
+    install:
+      - wget # Dependency of COPR repos.
 
   - type: rpm-ostree
     repos:
@@ -23,7 +26,6 @@ modules:
     install:
       # - micro
       - starship # Shell Prompt
-      - wget # Dependency of COPR repos.
     remove:
       - cockpit-bridge # Unneeded package from ucore-minimal
       - cockpit-system # Unneeded package from ucore-minimal
