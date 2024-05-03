@@ -35,7 +35,7 @@ modules:
       # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: chezmoi
-    source: "https://github.com/exponentactivity/modules.git"
+    source: "ghcr.io/exponentactivity/modules"
     # Installs chezmoi to /usr/bin/chezmoi from latest Github release
     # install_chezmoi: true # Optional - Default: true  - Expects type: boolean
     # () Git repository to initialize
