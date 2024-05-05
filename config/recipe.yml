@@ -26,7 +26,9 @@ modules:
     install:
       # - micro
       - starship # Shell Prompt
-      - nfs-utils # Fully featured nfs-utils
+      - nfs-utils # Fully featured nfs-utils - Dependency of libvirt
+      - libvirt # Virtualization abstraction
+      - qemu-kvm # Hypervisor
     remove:
       - cockpit-bridge # Unneeded package from ucore-minimal
       - cockpit-system # Unneeded package from ucore-minimal
