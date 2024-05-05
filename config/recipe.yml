@@ -26,6 +26,7 @@ modules:
     install:
       # - micro
       - starship # Shell Prompt
+      - nfs-utils # Fully featured nfs-utils
     remove:
       - cockpit-bridge # Unneeded package from ucore-minimal
       - cockpit-system # Unneeded package from ucore-minimal
@@ -33,6 +34,7 @@ modules:
       - cockpit-networkmanager # Unneeded package from ucore-minimal
       - cockpit-podman # Unneeded package from ucore-minimal
       - moby-engine # Unneeded package from ucore-minimal
+      - nfs-utils-coreos # Replaced by fully featured `nfs-utils`
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       # - firefox
