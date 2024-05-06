@@ -1,5 +1,5 @@
 ublue_variants:
-  - label: exponentactivity/atomic-server-customized
+  - label: exponentactivity/atomic-server
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: Atomic Server Customized
+      - label: Atomic Server
