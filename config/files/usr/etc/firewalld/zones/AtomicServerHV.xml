@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<zone>
+<zone target="DROP">
   <short>AtomicServerHypervisor</short>
   <description>Default firewall zone for hypervisors. Blocks everything, except ssh and libvirt.</description>
   <service name="ssh"/>

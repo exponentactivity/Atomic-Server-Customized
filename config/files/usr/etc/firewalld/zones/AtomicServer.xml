@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<zone>
+<zone target="DROP">
   <short>AtomicServer</short>
   <description>Default firewall zone. Blocks everything, except ssh to allow further configuration.</description>
   <service name="ssh"/>
