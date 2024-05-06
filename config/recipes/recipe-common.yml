@@ -37,10 +37,9 @@ modules:
       - cockpit-podman # Unneeded package from ucore-minimal
       - moby-engine # Unneeded package from ucore-minimal
       - nfs-utils-coreos # Replaced by fully featured `nfs-utils`
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - podman # Unneeded package from ucore-minimal
+      - podman-compose # Unneeded package from ucore-minimal
+      - toolbox # Unneeded package from ucore-minimal
 
   - type: chezmoi
     source: "ghcr.io/exponentactivity/modules"
@@ -58,5 +57,9 @@ modules:
     # disable_init: false # Optional - Default: false - Expects type: boolean
     # Disable the timer that updates chezmoi with the interval set above
     # disable_update: false # Optional - Default: false - Expects type: boolean
+
+  - type: script
+    snippets:
+      - "ln -sf /etc/firewalld/firewalld-atomicserver.conf /etc/firewalld/firewalld.conf"
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
