@@ -40,6 +40,7 @@ modules:
       - podman # Unneeded package from ucore-minimal
       - podman-compose # Unneeded package from ucore-minimal
       - toolbox # Unneeded package from ucore-minimal
+      - tailscale # Unneeded package from ucore-minimal
 
   - type: chezmoi
     source: "ghcr.io/exponentactivity/modules"
